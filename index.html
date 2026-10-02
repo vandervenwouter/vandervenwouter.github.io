@@ -34,13 +34,21 @@
       justify-content: flex-end;
       color: white;
       text-decoration: none;
-      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      background-color: #173f35;
       box-shadow: 0 12px 30px rgb(15 23 42 / 15%);
       transition: transform 160ms, box-shadow 160ms;
     }
     .app-tile:hover {
       transform: translateY(-5px);
       box-shadow: 0 18px 36px rgb(15 23 42 / 22%);
+    }
+    .app-tile svg {
+      width: 64px;
+      height: 64px;
+      flex: none;
+      align-self: center;
+      margin: auto 0;
+      color: #d9ed9b;
     }
     .app-tile h2,
     .app-tile p {
@@ -57,7 +65,12 @@
     <h1>My Projects</h1>
     <section class="projects">
       <a class="app-tile" href="https://vandervenwouter.github.io/hike-generator/">
-        <h2>hike-generator</h2></h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="signpost" aria-hidden="true" class="lucide lucide-signpost">
+          <path d="M12 13v8"></path>
+          <path d="M12 3v3"></path>
+          <path d="M2.354 10.354a1.207 1.207 0 0 1 0-1.708l2.06-2.06A2 2 0 0 1 5.828 6h12.344a2 2 0 0 1 1.414.586l2.06 2.06a1.207 1.207 0 0 1 0 1.708l-2.06 2.06a2 2 0 0 1-1.414.586H5.828a2 2 0 0 1-1.414-.586z"></path>
+        </svg>
+        <h2>hike-generator</h2>
         <p>Open project →</p>
       </a>
     </section>
